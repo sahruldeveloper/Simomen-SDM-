@@ -1,0 +1,21 @@
+<!-- START SIDEBAR -->
+      <div class="left-menu">
+        <div class="menubar-content">
+          <nav class="animated bounceInDown">
+            <ul id="sidebar">
+             <li class="{{ Request:: path() === 'admin' ? 'active' : '' }}"> <a href="{{ route('dashboard') }}"><i class="fas fa-home"></i>Dashboard</a></li>
+             <li class="{{ Request:: path() === 'admin/dosen' ? 'active' : '' }}"> <a href="{{route('dosen.index')}}"><i class="fas fa-home"></i>Data Dosen</a></li>
+             <li class="{{ Request:: path() === 'admin/pegawai' ? 'active' : '' }}"> <a href="{{route('pegawai.index')}}"><i class="fas fa-home"></i>Data Pegawai</a></li>
+           
+             <li class="{{ Request:: path() === 'admin/golongan' ? 'active' : '' }}"> <a href="{{route('golongan.index')}}"><i class="fas fa-home"></i>Data Golongan</a></li>
+             <li class="{{ Request:: path() === 'admin/jabatan' ? 'active' : '' }}"> <a href="{{route('jabatan.index')}}"><i class="fas fa-home"></i>Data Jabatan</a></li>
+             <li class="{{ Request:: path() === 'admin/fakultas' ? 'active' : '' }}"> <a href="{{route('fakultas.index')}}"><i class="fas fa-home"></i>Data Fakultas</a></li>
+             <li class="{{ Request:: path() === 'admin/jurusan' ? 'active' : '' }}"> <a href="{{route('jurusan.index')}}"><i class="fas fa-home"></i>Data Jurusan</a></li>
+             <li class="{{ Request:: path() === 'admin/petinggiYLPI' ? 'active' : '' }}"> <a href="{{route('petinggiYLPI.index')}}"><i class="fas fa-home"></i>Data Petinggi</a></li>
+            
+             
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- END SIDEBAR -->

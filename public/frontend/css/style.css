@@ -1,0 +1,396 @@
+:root {
+     --grey: #828EA5;
+     --colorSidebar:#DCE2F4 ;
+     --hoverNav: #Fff;
+     --green: #004029;
+     --yellow: #FFC107;
+ }
+
+/* navbar */
+.navbar {
+     position: relative;
+     z-index: 1;
+}
+
+
+.navbar-brand {
+     font-family: viga;
+     font-size: 32px;
+
+}
+
+.btn-navbar-right {
+     
+     margin-right: -18px !important;
+   
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+}
+
+.btn-logout:hover {
+    border :none !important;
+    background-color: #004029 !important;
+}
+
+
+
+.btn-login {
+     background-color: var(--green);
+     color: #fff;
+   
+ }
+ 
+ .btn-login:hover {
+     color: #fff;
+ }
+
+/* utility */
+.tombol {
+     background-color: var(--green);
+     text-transform: uppercase;
+     border-radius: 32px;
+     color: white;
+     padding: 10px;
+     width: 120px;
+     -webkit-border-radius: 32px;
+     -moz-border-radius: 32px;
+     -ms-border-radius: 32px;
+     -o-border-radius: 32px;
+}
+
+.tombol:hover {
+     background-color: #299c72;
+}
+
+/* jumbotron */
+.jumbotron {
+     background-image: url(../img/jumbotron.jpeg);
+     background-size: cover;
+     height: 540px;
+     text-align: center;
+     position: relative;
+     margin-top: -75px;
+}
+
+.jumbotron .container {
+     position: relative;
+     z-index: 1;
+}
+
+.jumbotron::after {
+     content: '';
+     display: block;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+     position: absolute;
+     bottom: 0;
+}
+
+.jumbotron .display-4 {
+     color: white;
+
+     margin-top: 120px;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+     font-size: 40px !important;
+     margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+     font-weight: 500;
+}
+
+/* info panel */
+.info-panel {
+     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+     border-radius: 12px;
+     margin-top: -100px;
+     background-color: #fff;
+     padding: 30px;
+}
+
+.info-panel img {
+     width: 80px;
+     height: 80px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+
+}
+
+.info-panel h4 {
+     font-size: 16px;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-top: 5px;
+}
+
+.info-panel p {
+     font-size: 14px;
+     color: #ACACAC;
+     margin-top: -5px;
+     font-weight: 200;
+
+}
+
+
+.footer {
+     margin-top: 100px;
+}
+
+.footer p {
+     color: #ACACAC;
+     font-size: 18px;
+}
+
+/* DEKSTOP VERSION */
+
+@media (min-width: 1200px) {
+
+     .navbar-brand,
+     .nav-link {
+          color: white !important;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+     }
+
+     .nav-link {
+          text-transform: uppercase;
+          margin-right: 30px;
+     }
+
+     .nav-link:hover:after {
+          content: '';
+          display: block;
+          border-bottom: 3px solid var(--green);
+          width: 50%;
+          margin: auto;
+          padding-bottom: 5px;
+          margin-bottom: -8px;
+
+     }
+
+     .jumbotron {
+          margin-top: -75px;
+          height: 640px;
+     }
+
+     .jumbotron .display-4 {
+          font-size: 62px;
+     }
+
+     .workingspace {
+          text-align: left;
+     }
+
+     .testimonial h5 {
+          font-size: 32px;
+     }
+}
+
+/* statistik */
+.section-stats {
+     margin-top: -50px;
+   }
+   
+   .section-stats .stats-detail {
+     padding-top: 15px;
+     background: #fff;
+     padding-left: 40px;
+   }
+   
+   .section-stats h2 {
+     font-size: 30px;
+     margin-bottom: 0;
+   }
+   
+   .section-stats p {
+     font-size: 18px;
+     font-weight: lighter;
+   }
+/* statistik */
+
+
+/* petinggi */
+.section-petinggi {
+     min-height: 540px;
+     background: var(--green);
+     margin-top: -92px;
+     margin-bottom: -230px;
+   }
+   
+   .section-petinggi .section-petinggi-heading {
+     margin-top: 190px;
+   }
+   
+   .section-petinggi .section-petinggi-heading h2,
+   .section-petinggi .section-petinggi-heading p {
+     color: #fff;
+   }
+   
+   .section-petinggi .section-petinggi-heading h2 {
+     font-family: 'Playfair Display', serif;
+     font-weight: bold;
+   }
+   
+   .section-petinggi-content .section-petinggi-profile .card-petinggi {
+     min-height: 380px;
+     background: #fff;
+     color: #fff;
+     padding: 30px;
+     background-size: cover;
+     margin-bottom: 20px;
+   }
+   
+   .section-petinggi-content .section-petinggi-profile .card-petinggi .travel-country {
+     font-size: 18px;
+     color: #fff;
+   }
+   
+   .section-petinggi-content .section-petinggi-profile .card-petinggi .travel-location {
+     font-size: 26px;
+     color: #fff;
+   }
+   
+
+   .wrapper-name-bidang {
+     position: relative;
+     bottom: -250px !important;
+   }
+/* petinggi */
+
+/* about  */
+
+.section-title-about {
+     margin-top: 100px;
+  
+}
+
+.about {
+     margin-top: 20px;
+     justify-content: center;
+}
+
+.about p {
+     text-align: center;
+}
+/* about  */
+
+
+/* footer */
+/* footer */
+footer {
+     color: #fff;
+     background-color: var(--green);
+     padding: 80px 0;
+     margin-top: 120px;
+}
+
+footer .footer-col:first-of-type {
+     padding-right: 30px;
+
+}
+
+footer .brand {
+     display: flex;
+}
+
+footer .brand img {
+     width: 70px;
+     height: 70px;
+     margin-right: 20px;
+}
+
+footer .brand h1 {
+     font-size: 25px;
+     font-weight: 600;
+     line-height: 25px;
+     text-transform: uppercase;
+}
+
+footer .tentang {
+     font-size: 14px;
+     line-height: 26px;
+     padding-bottom: 20px;
+     border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+footer .sosmed {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+footer .sosmed li {
+     display: inline-block;
+     margin-right: 15px;
+}
+
+footer .sosmed li a {
+     color: #fff;
+     border: 1px solid rgba(255, 255, 255, 0.5);
+     display: inline-block;
+     height: 50px;
+     width: 50px;
+     text-align: center;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     font-size: 20px;
+     line-height: 50px;
+}
+
+footer .sosmed li a:hover {
+     color: #c7c7c7;
+}
+
+.footer-col h2 {
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 25px;
+}
+
+.footer-col .alamat {
+     font-size: 14px;
+     line-height: 25px;
+}
+
+.footer-col .kontak {
+     list-style: none;
+     padding: 0;
+     font-size: 14px;
+     line-height: 24px;
+}
+
+.footer-col .kontak i {
+     margin-right: 10px;
+}
+
+.footer-col .footer-nav {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+.footer-col .footer-nav li {
+     margin: 10px 0;
+}
+
+.footer-col .footer-nav a {
+     color: #fff;
+     font-size: 15px;
+     font-weight: 24;
+}
+
+.footer-col .footer-nav a:hover {
+     border-bottom: 1px dashed #fff;
+}
+
+
+
+/* footer */
+

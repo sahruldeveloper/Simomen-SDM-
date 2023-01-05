@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400;500;600;700&family=The+Nautigal:wght@700&display=swap');
+
+
+
+/* versi kedua */
+* {
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item * {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --grey: #828EA5;
+    --colorSidebar:#DCE2F4 ;
+    --hoverNav: #Fff;
+    --green: #004029;
+    --yellow: #FFC107;
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: var(--colorSidebar);
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+
+aside {
+    /* position: fixed; */
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    overflow-x: auto;
+    background: var(--colorSidebar) !important;
+}
+
+.navigation {
+    background: var(--colorSidebar) !important;
+    width: 344px;
+   
+}
+
+.navbar-brand {
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 232px;
+}
+
+.navbar-daily {
+    padding-left: 40px;
+    padding-bottom: 18px;
+    padding-top: 20px;
+}
+
+.navbar-daily span {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.nav-item {
+    padding-left: 40px;
+
+}
+
+.nav .active {
+    background-color:var(--hoverNav);
+    color: #fff !important;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 16px;
+}
+
+.nav-item a .title {
+    margin-left: 10px !important;
+}
+
+
+.nav-item a .icon {
+    font-size: 32px;
+    color: #004029;
+}
+
+.nav-item a .title {
+    font-size: 16px;
+    color: #004029;
+}
+
+
+.nav-item:hover {
+    background-color: #fff;
+    
+}
+
+/* main */
+.main {
+    position: absolute;
+    top: 0;
+    left: 82px;
+    background-color: #fff;
+    /* min-width: 1240px; */
+    min-height: 100vh !important;
+    padding: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.topbar .topbar-title h5 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--green);
+    color: var(--green);
+}
+
+.topbar .topbar-title span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--blue2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+
+
+.name-user {
+    position: relative;
+    top: 11px;
+    padding: 4px;
+}
+
+.name-user span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.user img {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    padding-top: 40px;
+}
+
+.icon-shape {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    background-color: #fff !important;
+    margin-bottom: 4px;
+}
+
+.icon-shape i {
+    opacity: 0.8;
+    top: 8px;
+    position: relative;
+    font-size: 20px;
+    color: black;
+}
+
+
+.card-numbers {
+    border-radius: 32px !important;
+    -webkit-border-radius: 32px !important;
+    -moz-border-radius: 32px !important;
+    -ms-border-radius: 32px !important;
+    -o-border-radius: 32px !important;
+    height: 192px;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin-top: 24px;
+   
+}
+
+.card-icon-dashboard {
+    position: absolute;
+    top: 62px;
+    left: 164px;
+}
+
+
+
+.numbers h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.numbers h4 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+
+/* main */
+
+/* chart */
+
+#chart-sdm {
+    height: 408px;
+    border-radius: 32px !important;
+    -webkit-border-radius: 32px !important;
+    -moz-border-radius: 32px !important;
+    -ms-border-radius: 32px !important;
+    -o-border-radius: 32px !important;
+}
+
+/* table smd information */
+.card-information {
+    padding: 32px;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+
+
+.img-information {
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--blue2);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 2px;
+
+}
+
+.card-information p {
+    font-size: 12px;
+}
+
+
+/* table smd information */
+
+
+.btn-hapus {
+    background-color: var(--yellow);
+    width: 68px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.btn-edit {
+    background-color: var(--green);
+    width: 68px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.btn-detail {
+    background-color: var(--grey);
+    width: 68px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+/* login */
+.wrapper-login {
+    margin-left: 40px;
+    margin-top: 70px;
+    min-height: 100vh;
+
+}
+ /* .content-login {
+    position: relative;
+    top: -210px;
+} */
+
+.header {
+    position: relative;
+    
+}
+
+
+.logo img {
+    position: relative;
+    width: 258px;
+    height: 40px;
+    top: -40px;
+    
+}
+
+.simomen-explain {
+    position: relative;
+    top: -70px;
+    padding-top: 4px;
+    padding-left: 10px;
+    width: 100%;
+    height: 300px;
+    background: var(--bluesoft);
+    box-sizing: border-box;
+}
+
+.simomen-explain h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.simomen-explain h5 span {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--yellow);
+}
+
+.simomen-explain p {
+    font-size: 14px;
+}
+
+.layout-login h3 {
+    font-size: 36px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.layout-login h5 {
+    font-size: 28px;
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.btn-login {
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+
+    background-color: #004029;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: 40px;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+/* login */
+
+/* login */
+
+
+.carousel img {
+    position: relative;
+    top: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 600px;
+    height: 300px;
+
+}
+
+.form-login {
+    margin-top: 40px;
+}
+
+.form-login label {
+    font-size: 14px;
+    color: #828EA5;
+}
+
+.form-input {
+    border-radius: 32px !important;
+    -webkit-border-radius: 32px !important;
+    -moz-border-radius: 32px !important;
+    -ms-border-radius: 32px !important;
+    -o-border-radius: 32px !important;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: var(--colorSidebar) !important;
+   
+}
+
+.btn-success {
+     margin-top: 24px;
+     background-color: #004029 !important;
+     border-radius:32px !important ;
+     -webkit-border-radius:32px !important ;
+     -moz-border-radius:32px !important ;
+     -ms-border-radius:32px !important ;
+     -o-border-radius:32px !important ;
+}
+
+.btn-success:hover {
+    background-color: rgba(0, 64, 41, 0.9) !important;
+}
+
+
+/* login */
+
+
+/* modal-data */
+
+.modal {
+    
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    
+}
+
+.text-information {
+    font-size: 11px;
+   
+    
+}
+
+/* tabel */
+
+/* .table-data {
+    
+    border-radius: 32px !important;
+    -webkit-border-radius: 32px !important;
+    -moz-border-radius: 32px !important;
+    -ms-border-radius: 32px !important;
+    -o-border-radius: 32px !important;
+}
+
+.table-data thead{
+    background-color: #F8F9FD;
+    
+}
+
+.table-data tbody tr:nth-child(odd) {
+    background-color: var(--colorSidebar) !important;
+   
+  
+}
+
+.table-data tbody tr:nth-child(even) {
+    background-color: #F8F9FD;
+  
+} */
+
+.table-data {
+    border-radius:32px;
+    -webkit-border-radius:32px;
+    -moz-border-radius:32px;
+    -ms-border-radius:32px;
+    -o-border-radius:32px;
+    background-color: #F8F9FD;
+    overflow-x: auto;
+   
+}
+
+.table-data th {
+   padding: 10px 0px 16px 25px  !important;
+   
+}
+
+.table-data td {
+    padding: 5px 0px 5px 25px !important;
+}
+
+
+
+.table-data tbody tr:nth-child(odd) {
+    background-color: var(--colorSidebar) !important;
+}
+
+.table-data tbody tr:nth-child(even) {
+    background-color: #F8F9FD;
+}
+
+
+
+/* td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+}
+
+th {
+    background-color: blue;
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+} */
+/* tabel */
+
+
+
+/* modal-data */
+
+.label-input {
+    font-size: 11px;
+}
+
+
+/* phone */
+@media (min-width: 768px) { 
+
+    .main {
+        position: absolute;
+        top: 0;
+        left: 290px;
+        background-color: #fff;
+        min-width: 1240px;
+        min-height: 100vh;
+        padding: 50px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    /* login */
+    .wrapper-login {
+        margin-left: 90px;
+        margin-top: 70px;
+        min-height: 100vh;
+    
+    }
+     .content-login {
+        position: relative;
+        top: -210px;
+    }
+    
+    .header {
+        position: relative;
+        
+    }
+    
+    
+    .logo img {
+        position: relative;
+        width: 258px;
+        height: 40px;
+        top: -40px;
+        
+    }
+    
+    .simomen-explain {
+        position: relative;
+        top: -70px;
+        padding-top: 4px;
+        padding-left: 10px;
+        width: 100%;
+        height: 300px;
+        background: var(--bluesoft);
+        box-sizing: border-box;
+    }
+    
+    .simomen-explain h5 {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--green);
+    }
+    
+    .simomen-explain h5 span {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--yellow);
+    }
+    
+    .simomen-explain p {
+        font-size: 14px;
+    }
+    
+    .layout-login h3 {
+        font-size: 36px;
+        color: var(--green);
+        font-weight: 600;
+    }
+    
+    .layout-login h5 {
+        font-size: 28px;
+        color: var(--yellow);
+        font-weight: 500;
+    }
+    
+    .btn-login {
+        width: 500px;
+        height: 45px;
+        border-radius: 50px;
+    
+        background-color: #004029 !important;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        margin-top: 40px;
+        font-weight: 500px;
+        font-size: 18px;
+    }
+
+    .nav-breadcrumb {
+        margin-top: 32px;
+        /* background-color: #828EA5; */
+       
+    }
+    
+    /* login */
+
+   
+
+    .card-numbers {
+        border-radius: 32px !important;
+        -webkit-border-radius: 32px !important;
+        -moz-border-radius: 32px !important;
+        -ms-border-radius: 32px !important;
+        -o-border-radius: 32px !important;
+        height: 192px;
+        padding-left: 12px;
+        padding-top: 12px;
+        margin-top: 0px;
+       
+    }
+
+    /* Detail Pegawai */
+    .user-pegawai {
+        width: 300px;
+        height: 300px;
+        border: 1px solid var(--colorSidebar);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    
+    .user-pegawai img{
+        width: 240px;
+        height: 240px;
+        border: 1px solid var(--colorSidebar);
+    }
+
+    
+
+    .detail-pegawai ul  {
+        list-style-type: none;
+        margin-left: -30px;
+    }
+
+   
+
+    
+    
+    /* End Detail Pegawai */
+}
+/* phone */
+
+/* custom datatable */
+.dataTables_filter {
+    display: none !important;
+}
+/* custom datatable */
+
+
+
+
+
+
+
